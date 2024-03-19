@@ -1,7 +1,6 @@
 package hexlet.code;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import hexlet.code.model.Url;
 import hexlet.code.repository.UrlCheckRepository;
@@ -9,9 +8,6 @@ import hexlet.code.repository.UrlsRepository;
 import hexlet.code.utils.NamedRoutes;
 import hexlet.code.utils.Utils;
 import io.javalin.Javalin;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
 import org.junit.jupiter.api.AfterAll;
