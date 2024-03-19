@@ -43,8 +43,11 @@ public class App {
         }
         BaseRepository.dataSource = dataSource;
 
-        var app = Javalin.create(config -> config.plugins.enableDevLogging());
-        JavalinJte.init(createTemplateEngine());
+        var app = Javalin.create(config -> {
+            config.bundledPlugins.enableDevLogging() ;
+            config.fileRenderer(new JavalinJte(createTemplateEngine()));
+        });
+
 
         app.get(NamedRoutes.mainPath(), RootController::index);
         app.get(NamedRoutes.urlsPath(), UrlsController::index);
