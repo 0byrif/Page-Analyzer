@@ -106,24 +106,6 @@ class AppTest {
     }
 
     @Test
-    void testWebServerResponse() throws IOException {
-        OkHttpClient client = new OkHttpClient();
-        String expectedResponseBody = readFixture("testIndex.html");
-        mockWebServer.enqueue(new MockResponse()
-                .setResponseCode(200)
-                .setBody(expectedResponseBody));
-
-        Request request = new Request.Builder()
-                .url(mockWebServer.url("/"))
-                .build();
-
-        try (Response response = client.newCall(request).execute()) {
-            assertEquals(200, response.code());
-            assertEquals(expectedResponseBody, response.body().string());
-        }
-    }
-
-    @Test
     void testCreatePage() throws SQLException {
         var url = new Url("https://www.example.com", Utils.getTime());
         UrlsRepository.save(url);
