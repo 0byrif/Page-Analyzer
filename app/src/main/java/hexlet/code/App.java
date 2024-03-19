@@ -48,7 +48,6 @@ public class App {
             config.fileRenderer(new JavalinJte(createTemplateEngine()));
         });
 
-
         app.get(NamedRoutes.mainPath(), RootController::index);
         app.get(NamedRoutes.urlsPath(), UrlsController::index);
         app.get(NamedRoutes.urlPath("{id}"), UrlsController::show);
