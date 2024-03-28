@@ -13,5 +13,4 @@ https://java-project-72-reyf.onrender.com
 <h4>2. После этого сайт будет добавлен в таблицу</h4>
 <img width="1385" alt="Снимок экрана 2024-02-18 в 14 32 28" src="https://github.com/Obyrif/java-project-72/assets/131253542/ca902a91-b059-419e-b0f3-773ad814de4d">
 
-<h4>3. Результат проверки</h4>
-<img width="1382" alt="Снимок экрана 2024-02-18 в 14 33 46" src="https://github.com/Obyrif/java-project-72/assets/131253542/78bafe56-c6fc-4c4f-874d-50ecbee77c22">
+
